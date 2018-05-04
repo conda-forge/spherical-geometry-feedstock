@@ -19,14 +19,16 @@ arcs.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/spherical-geometry-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/spherical-geometry-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/spherical-geometry-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/spherical-geometry-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/spherical-geometry-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/spherical-geometry-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/spherical-geometry-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/spherical-geometry-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/spherical-geometry-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/spherical-geometry-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/spherical-geometry-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/spherical-geometry-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/spherical-geometry/badges/version.svg)](https://anaconda.org/conda-forge/spherical-geometry)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/spherical-geometry/badges/downloads.svg)](https://anaconda.org/conda-forge/spherical-geometry)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-spherical--geometry-green.svg)](https://anaconda.org/conda-forge/spherical-geometry) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/spherical-geometry.svg)](https://anaconda.org/conda-forge/spherical-geometry) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/spherical-geometry.svg)](https://anaconda.org/conda-forge/spherical-geometry) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/spherical-geometry.svg)](https://anaconda.org/conda-forge/spherical-geometry) |
 
 Installing spherical-geometry
 =============================
