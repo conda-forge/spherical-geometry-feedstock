@@ -1,7 +1,7 @@
 {% set name = "spherical-geometry" %}
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "33826490504882b2c096d77972876ca65eba0dd7dee9d675802c797d94f33826" %}
+{% set hash_value = "3afe763c3bcb847645433e6237a5b13beb2a83bd9c7e481fa1b2d1523a0feb79" %}
 
 package:
   name: '{{ name|lower }}'
