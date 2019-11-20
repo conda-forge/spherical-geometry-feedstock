@@ -1,7 +1,7 @@
 {% set name = "spherical-geometry" %}
-{% set version = "1.2.5" %}
+{% set version = "1.2.18" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "facf92dc2e9bd5e110360a3647a26dc0bd02ea612180e24208ce104266ae1310" %}
+{% set hash_value = "5c425931b7018ecb3ab0f1e0a8912aceba0be2de9ff3da76ba4aa10620aa9f45" %}
 
 package:
   name: '{{ name|lower }}'
@@ -13,7 +13,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --offline --single-version-externally-managed --record=record.txt
   skip: true  # [win and py3k]
 
