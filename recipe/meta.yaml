@@ -1,19 +1,17 @@
 {% set name = "spherical-geometry" %}
-{% set version = "1.2.5" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "facf92dc2e9bd5e110360a3647a26dc0bd02ea612180e24208ce104266ae1310" %}
+{% set version = "1.2.19" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: 6b6d5d92ae761d1d8a83033ae85a0f8a83296c15654177af17d701324fa6f255
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --offline --single-version-externally-managed --record=record.txt
   skip: true  # [win and py3k]
 
