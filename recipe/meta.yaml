@@ -1,39 +1,41 @@
 {% set name = "spherical-geometry" %}
-{% set version = "1.2.5" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "facf92dc2e9bd5e110360a3647a26dc0bd02ea612180e24208ce104266ae1310" %}
+{% set version = "1.2.23" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spherical_geometry-{{ version }}.tar.gz
+  sha256: a496276d34ab906039332f77498921f8385807d2574fa63353efb3dba145a9f6
 
 build:
-  number: 1000
-  script: python setup.py install --offline --single-version-externally-managed --record=record.txt
-  skip: true  # [win and py3k]
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 1001
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
-    - setuptools
-    - astropy
+    - setuptools-scm
+    - pip
   run:
     - python
-    - astropy
+    - astropy >=5.0.4
+    - numpy >=1.18
 
 test:
   imports:
     - spherical_geometry
-    - spherical_geometry.utils
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://www.stsci.edu/resources/software_hardware/stsci_python
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: licenses/LICENSE.rst
   summary: A Python package for handling spherical polygons that represent arbitrary regions of the sky
