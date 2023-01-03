@@ -31,7 +31,7 @@ test:
 
 about:
   home: http://www.stsci.edu/resources/software_hardware/stsci_python
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: licenses/LICENSE.rst
   summary: A Python package for handling spherical polygons that represent arbitrary regions of the sky
