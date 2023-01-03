@@ -11,7 +11,6 @@ source:
 
 build:
   script:
-    - conda clean --all
     - {{ PYTHON }} -m pip install . -vv
   number: 0
   skip: true  # [win and py3k]
