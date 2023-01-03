@@ -10,7 +10,9 @@ source:
   sha256: a496276d34ab906039332f77498921f8385807d2574fa63353efb3dba145a9f6
 
 build:
-  script: {{ PYTHON }} -m pip install . -vv
+  script:
+    - conda clean --all
+    - {{ PYTHON }} -m pip install . -vv
   number: 0
   skip: true  # [win and py3k]
 
