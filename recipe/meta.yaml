@@ -23,12 +23,11 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - python
+    - python {{ python }}
     - pip
     - setuptools
     - setuptools_scm
     - astropy
-    - numpy
   run:
     - python
     - astropy
