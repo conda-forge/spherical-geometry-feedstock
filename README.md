@@ -262,8 +262,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@bernie-simon](https://github.com/bernie-simon/)
-* [@bsipocz](https://github.com/bsipocz/)
 * [@jhunkeler](https://github.com/jhunkeler/)
 * [@mwcraig](https://github.com/mwcraig/)
 * [@pllim](https://github.com/pllim/)
+* [@mcara](https://github.com/mcara/)
