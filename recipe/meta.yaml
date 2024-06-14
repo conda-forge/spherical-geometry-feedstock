@@ -33,7 +33,7 @@ requirements:
     - python
     - setuptools
     - astropy
-    - {{ pin_compatible('numpy') }}
+    - numpy >=1.23
 
 test:
   imports:
