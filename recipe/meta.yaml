@@ -38,7 +38,7 @@ requirements:
 test:
   imports:
     - spherical_geometry
-    - spherical_geometry.utils
+    - spherical_geometry.math_util
 
 about:
   home: http://www.stsci.edu/resources/software_hardware/stsci_python
