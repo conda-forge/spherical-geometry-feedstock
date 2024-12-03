@@ -7,11 +7,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
   sha256: bed481a8b080748bf93434c3b113eae53609a61d0c0694db83c07685b52c3d23
 
 build:
-  number: 1
+  number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: true  # [py<39]
 
@@ -28,11 +28,11 @@ requirements:
     - pip
     - setuptools
     - setuptools_scm
-    - astropy
+    - astropy-base
   run:
     - python
     - setuptools
-    - astropy
+    - astropy-base
     - numpy >=1.23
 
 test:
