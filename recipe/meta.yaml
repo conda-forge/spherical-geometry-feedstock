@@ -21,14 +21,15 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python {{ python }}
     - pip
     - setuptools
     - setuptools_scm
     - astropy-base
+    - numpy
   run:
     - python
     - setuptools
