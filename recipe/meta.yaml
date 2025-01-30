@@ -11,7 +11,7 @@ source:
   sha256: bed481a8b080748bf93434c3b113eae53609a61d0c0694db83c07685b52c3d23
 
 build:
-  number: 2
+  number: 3
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: true  # [py<39]
 
@@ -21,14 +21,15 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python {{ python }}
     - pip
     - setuptools
     - setuptools_scm
     - astropy-base
+    - numpy
   run:
     - python
     - setuptools
