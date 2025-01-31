@@ -34,7 +34,7 @@ requirements:
     - python
     - setuptools
     - astropy-base
-    - numpy >=1.23
+    - numpy >=1.25
 
 test:
   imports:
