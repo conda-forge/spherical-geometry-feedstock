@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
-  skip: true  # [py<310]
+  skip: true  # [py <311]
 
 requirements:
   build:
@@ -33,8 +33,8 @@ requirements:
   run:
     - python
     - setuptools
-    - astropy-base
-    - numpy >=1.23
+    - astropy-base >=5.2.0
+    - numpy >=1.25
 
 test:
   imports:
